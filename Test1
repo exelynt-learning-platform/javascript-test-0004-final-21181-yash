@@ -1,0 +1,15 @@
+let n = 6;
+
+for (let i = 1; i <= n; i++) {
+
+    let num = i % 2;   // starting value (1 for odd rows, 0 for even)
+
+    let row = "";
+
+    for (let j = 1; j <= i; j++) {
+        row += num + " ";
+        num = 1 - num; // toggle between 0 and 1
+    }
+
+    console.log(row);
+}
